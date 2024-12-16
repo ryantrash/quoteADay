@@ -1,5 +1,6 @@
 import React from 'react';
-import {View, StyleSheet, Text, SafeAreaView} from 'react-native';
+import { View, StyleSheet, SafeAreaView, Dimensions } from 'react-native';
+import { Text, Card, Provider as PaperProvider } from 'react-native-paper';
 
 const QUOTES = [
   "PLACEHOLDER 1",
@@ -35,27 +36,53 @@ const QUOTES = [
   "PLACEHOLDER 31"
 ];
 
-const App = () => {
-  const text = QUOTES[new Date().getDate()-1] || "NONE FOUND";
+const QuoteADayApp = () => {
+  const quote = QUOTES[new Date().getDate() - 1] || "NONE FOUND";
 
   return (
-    <SafeAreaView>
-      <View style={styles.container}>
-        <Text style={styles.quoteText}>{text}</Text>
-      </View>
-    </SafeAreaView>
+    <PaperProvider>
+      <SafeAreaView style={styles.safeArea}>
+        <View style={styles.container}>
+          <Card style={styles.quoteContainer}>
+            <Card.Content>
+              <Text style={styles.quoteText}>{quote}</Text>
+            </Card.Content>
+          </Card>
+        </View>
+      </SafeAreaView>
+    </PaperProvider>
   );
 };
 
 const styles = StyleSheet.create({
+  safeArea: {
+    flex: 1,
+    backgroundColor: '#FAF3E0',
+  },
   container: {
     flex: 1,
     justifyContent: 'center',
-    backgroundColor: 'black',
+    alignItems: 'center',
+    padding: 20,
+  },
+  quoteContainer: {
+    width: Dimensions.get('window').width * 0.9,
+    borderRadius: 15,
+    backgroundColor: '#DAB894',
+    padding: 20,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.2,
+    shadowRadius: 6,
+    elevation: 6,
   },
   quoteText: {
-    color: "white",
+    fontSize: 24,
+    color: '#3E2723',
+    fontWeight: 'bold',
+    textAlign: 'center',
+    lineHeight: 32,
   },
 });
 
-export default App; 
+export default QuoteADayApp;
