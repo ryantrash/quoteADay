@@ -1,51 +1,18 @@
 import React from 'react';
 import { View, StyleSheet, SafeAreaView, Dimensions } from 'react-native';
 import { Text, Card, Provider as PaperProvider } from 'react-native-paper';
+import quote from './data'
 
-const QUOTES = [
-  "PLACEHOLDER 1",
-  "PLACEHOLDER 2",
-  "PLACEHOLDER 3",
-  "PLACEHOLDER 4",
-  "PLACEHOLDER 5",
-  "PLACEHOLDER 6 ",
-  "PLACEHOLDER 7 ",
-  "PLACEHOLDER 8 ",
-  "PLACEHOLDER 9 ",
-  "PLACEHOLDER 10",
-  "PLACEHOLDER 11",
-  "PLACEHOLDER 12",
-  "PLACEHOLDER 13",
-  "PLACEHOLDER 14",
-  "PLACEHOLDER 15",
-  "PLACEHOLDER 16",
-  "PLACEHOLDER 17",
-  "PLACEHOLDER 18",
-  "PLACEHOLDER 19",
-  "PLACEHOLDER 20",
-  "PLACEHOLDER 21",
-  "PLACEHOLDER 22",
-  "PLACEHOLDER 23",
-  "PLACEHOLDER 24",
-  "PLACEHOLDER 25",
-  "PLACEHOLDER 26",
-  "PLACEHOLDER 27",
-  "PLACEHOLDER 28",
-  "PLACEHOLDER 29",
-  "PLACEHOLDER 30",
-  "PLACEHOLDER 31"
-];
-
-const QuoteADayApp = () => {
-  const quote = QUOTES[new Date().getDate() - 1] || "NONE FOUND";
+const App = () => {
 
   return (
+    // TODO: Find out how to make flashcard
     <PaperProvider>
       <SafeAreaView style={styles.safeArea}>
         <View style={styles.container}>
           <Card style={styles.quoteContainer}>
             <Card.Content>
-              <Text style={styles.quoteText}>{quote}</Text>
+              <Text style={styles.quoteText}>{quote.content}</Text>
             </Card.Content>
           </Card>
         </View>
@@ -85,6 +52,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default QuoteADayApp;
-
-
+export default App;
