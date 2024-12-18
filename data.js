@@ -41,8 +41,8 @@ const QUOTES = [
     desc: "DESCRIPTION PLACEHOLDER 8"
   },
   {
-    content: "\"The greatest obstacle to discover is not ignorance; it is the illusion of knnowledge.\"",
-    author: "Daniel J. Boorstin",
+    content: "\"Real knowledge is to know the extent of one's ignorance\"",
+    author: "Confucius",
     desc: "DESCRIPTION PLACEHOLDER 9"
   },
   {
@@ -79,6 +79,41 @@ const QUOTES = [
     content: "\"Whether you think you can, or you think you can't, you're right\"",
     author: "Henry Ford",
     desc: "DESCRIPTION PLACEHOLDER 16"
+  },
+  {
+    content: "\"Patience is bitter, but its fruit is sweet.\"",
+    author: "Aristotle",
+    desc: "DESCRIPTION PLACEHOLDER 17"
+  },
+  {
+    content: "\"Be kind, for everyone you meet is fighting a hard battle.\"",
+    author: "Socrates",
+    desc: "DESCRIPTION PLACEHOLDER 18"
+  },
+  {
+    content: "\"Worry is interst paid by those who borrow trouble.\"",
+    author: "George Washington",
+    desc: "DESCRIPTION PLACEHOLDER 19"
+  },
+  {
+    content: "\"Experience is the teacher of all things.\"",
+    author: "Socrates",
+    desc: "DESCRIPTION PLACEHOLDER 20"
+  },
+  {
+    content: "\"It's not the size of the dog in the fight, it's the size of the fight in the dog.\"",
+    author: "Mark Twain",
+    desc: "DESCRIPTION PLACEHOLDER 21"
+  },
+  {
+    content: "\"Courage is knowing what not to fear.\"",
+    author: "Plato",
+    desc: "DESCRIPTION PLACEHOLDER 22"
+  },
+  {
+    content: "\"The way I see it, if you want the rainbow, you gotta put up with the rain.\"",
+    author: "Dolly Parton",
+    desc: "DESCRIPTION PLACEHOLDER 23"
   },
 ]
 
