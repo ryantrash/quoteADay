@@ -1,24 +1,23 @@
-import React, {useState} from 'react';
-import { View, StyleSheet, SafeAreaView, Dimensions, TouchableHighlight} from 'react-native';
+import React, { useState } from 'react';
+import { View, StyleSheet, SafeAreaView, Dimensions, TouchableHighlight } from 'react-native';
 import { Text, Provider as PaperProvider } from 'react-native-paper';
-import quote from './data'
+import quote from './data';
 
 const App = () => {
   const [quoteText, setText] = useState(quote.content + "\n" + quote.author);
   function handleClick() {
-    if(quoteText == quote.content + "\n" + quote.author){
+    if (quoteText == quote.content + "\n" + quote.author) {
       setText(quote.desc);
     } else {
       setText(quote.content + "\n" + quote.author);
     }
   }
   return (
-    // TODO: Find out how to make flashcard
     <PaperProvider>
       <SafeAreaView style={styles.safeArea}>
         <View style={styles.container}>
           <TouchableHighlight onPress={handleClick} style={styles.quoteContainer}>
-          <Text style={styles.quoteText}>{quoteText}</Text>
+            <Text style={styles.quoteText}>{quoteText}</Text>
           </TouchableHighlight>
         </View>
       </SafeAreaView>
@@ -30,6 +29,9 @@ const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
     backgroundColor: '#FAF3E0',
+    borderWidth: 5, 
+    borderColor: '#6F4F28', 
+    padding: 5, 
   },
   container: {
     flex: 1,
