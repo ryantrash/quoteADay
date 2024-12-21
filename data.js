@@ -13,7 +13,7 @@ const QUOTES = [
   {
     content: "\"If you can't fly then run, if you can't run then walk, if you can't walk then crawl, but whatever you do you have to keep moving forward.\"",
     author: "Martin Luther King Jr.",
-    desc: No matter what happens or what your capabilities may be, you possess the ability to achieve greatness, but you must try."
+    desc: "No matter what happens or what your capabilities may be, you possess the ability to achieve greatness, but you must try."
   },
   {
     content: "\"Success is not final, failure is not fatal: it is the courage to continue that counts.\"",
