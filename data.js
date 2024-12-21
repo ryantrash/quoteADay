@@ -115,6 +115,46 @@ const QUOTES = [
     author: "Dolly Parton",
     desc: "DESCRIPTION PLACEHOLDER 23"
   },
+  {
+    content: "\"The only way to have a friend is to be one.\"",
+    author: "Ralph Waldo Emerson",
+    desc: "DESCRIPTION PLACEHOLDER 24"
+  },
+  {
+    content: "\"Genius is one percent inspiration and ninety-nine percent perspiration.\"",
+    author: "Thomas Edison",
+    desc: "DESCRIPTION PLACEHOLDER 25"
+  },
+  {
+    content: "\"Success is not the key to happiness.  Happiness is the key to success. If you love what you are doing,you will be successful.\"",
+    author: "Albert Schweitzer",
+    desc: "DESCRIPTION PLACEHOLDER 26"
+  },
+  {
+    content: "\"Optimism is the faith that leads to achievement.  Nothingf can be done without hope and confidence.\"",
+    author: "Helen Keller",
+    desc: "DESCRIPTION PLACEHOLDER 27"
+  },
+  {
+    content: "\"Life is like riding a bicycle. To keep your balance, you must keep moving.\"",
+    author: "Albert Einstein",
+    desc: "DESCRIPTION PLACEHOLDER 28"
+  },
+  {
+    content: "\"Go confidently in the direction of your dreams! Live the life you've imagined.\"",
+    author: "Henry David Thoreau",
+    desc: "DESCRIPTION PLACEHOLDER 29"
+  },
+  {
+    content: "\"The way to get started is to quit talking and begin doing.\"",
+    author: "Walt Disney",
+    desc: "DESCRIPTION PLACEHOLDER 30"
+  }
+  {
+    content: "\"Alone we can do so little, together we can do so much.\"",
+    author: "Confucious",
+    desc: "DESCRIPTION PLACEHOLDER 31"
+  },
 ]
 
 const quote = QUOTES[new Date().getDate() - 1] || "NONE FOUND";
